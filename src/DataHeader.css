@@ -1,0 +1,59 @@
+.DataHeader-header {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  border-radius: 10px 10px 0 0;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.DataHeader--refresh {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 0.5em;
+  border-radius: 50%;
+  height: 4em;
+  width: 4em
+}
+
+.DataHeader--refresh-icon {
+  fill: white;
+  height: 100%;
+  width: auto;
+}
+
+.DataHeader--form {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.DataHeader--form-input {
+  display: none;
+  opacity: 0;
+}
+
+.DataHeader--form-checkbox {
+  display: inline-block;
+  content: '';
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 0.2em;
+  margin-right: 1em;
+  margin-left: 2em;
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: middle;
+}
+
+.DataHeader--form-checkmark {
+  fill: white;
+  height: 90%;
+  opacity: 0;
+}
+
+.DataHeader--form-input:checked + div > svg {
+  opacity: 100;
+}
